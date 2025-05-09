@@ -67,7 +67,7 @@ const signIn = async (req,res)=>
             }
             else
             {
-                res.status(400).json({success:false,message:'Unable to register user'})
+               return res.status(400).json({success:false,message:'Unable to register user'})
             }
         
            }catch(e) 
@@ -75,7 +75,7 @@ const signIn = async (req,res)=>
              console.log(e)
              res.status(500).json({
                 success:false,
-                message:'Something went wrong. Try again.'
+                message:'Something went wrong during signup. Try again.'
              })
            }
         }

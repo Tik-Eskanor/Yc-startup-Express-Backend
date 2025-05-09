@@ -18,7 +18,7 @@ const app = express()
   
 
 // connect to mongodb
-mongoose.connect('mongodb://localhost:27017/yc-startup')
+mongoose.connect(process.env.MONGODB_URI)
 .then(()=> console.log('Database connected'))
 .catch(e => console.log(e))
 
