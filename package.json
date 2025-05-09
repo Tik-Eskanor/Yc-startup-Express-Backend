@@ -1,0 +1,21 @@
+{
+  "name": "yc_startup",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "build":"npm install",
+    "start":"node server.js"
+  },
+  "keywords": [],
+  "author": "", 
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "jwt-decode": "^4.0.0",
+    "mongoose": "^8.13.2"
+  }
+}
